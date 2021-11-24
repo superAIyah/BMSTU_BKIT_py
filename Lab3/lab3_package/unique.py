@@ -32,18 +32,19 @@ class Unique(object):
         return self
 
 # Тестирование на примерах
-print("TEST 1")
-data = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2]
-for elem in Unique(data):
-    print(elem)
-print("TEST 2")
-data = gen_random(10, 1, 3)
-for elem in Unique(data):
-    print(elem)
-print("TEST 3")
-data = ['a', 'A', 'b', 'B', 'a', 'A', 'b', 'B']
-for elem in Unique(data):
-    print(elem)
-print("TEST 4")
-for elem in Unique(data, ignore_case=True):
-    print(elem)
+if __name__ == '__main__':
+    print("TEST 1")
+    data = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2]
+    for elem in Unique(data):
+        print(elem)
+    print("TEST 2")
+    data = gen_random(10, 1, 3)
+    for elem in Unique(data):
+        print(elem)
+    print("TEST 3")
+    data = ['a', 'A', 'b', 'B', 'a', 'A', 'b', 'B']
+    for elem in Unique(data):
+        print(elem)
+    print("TEST 4")
+    for elem in Unique(data, ignore_case=True):
+        print(elem)
